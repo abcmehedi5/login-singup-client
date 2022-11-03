@@ -8,7 +8,6 @@ import Login from "./Componets/Auth/Login/Login";
 import { createContext, useState } from "react";
 import PrivateRoter from "./Componets/PrivetRouter/PrivateRoter";
 import ForgetPassword from "./Componets/Auth/ForgetPassword/ForgetPassword";
-import ResetPassword from "./Componets/Auth/ForgetPassword/ResetPassword";
 export const userContext = createContext();
 function App() {
   const [loggedInUser, setLoggedInUsr] = useState({});
@@ -22,7 +21,6 @@ function App() {
           <Route path="/" element={<Singup />} />
           <Route path="/login" element={<Login />} />
           <Route path="/forget-password" element={<ForgetPassword/>} />
-          <Route path="/reset-password" element={<ResetPassword/>} />
           <Route
             path="/admin"
             element={
